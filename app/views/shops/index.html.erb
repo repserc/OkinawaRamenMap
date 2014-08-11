@@ -1,18 +1,18 @@
-<h1>Listing shops</h1>
+<h1>店名一覧</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Kana</th>
-      <th>Category</th>
-      <th>Address</th>
-      <th>Phone</th>
-      <th>Tag</th>
-      <th>Gps</th>
-      <th>Delivary</th>
-      <th>Hour</th>
-      <th>Holiday</th>
+      <th>店名</th>
+      <th>よみがな</th>
+      <th>カテゴリ</th>
+      <th>住所</th>
+      <th>電話番号</th>
+      <th>タグ</th>
+      <th>駐車場</th>
+      <th>配達</th>
+      <th>営業時間</th>
+      <th>休日</th>
       <th></th>
       <th></th>
       <th></th>
@@ -32,9 +32,9 @@
         <td><%= shop.delivary %></td>
         <td><%= shop.hour %></td>
         <td><%= shop.holiday %></td>
-        <td><%= link_to 'Show', shop %></td>
-        <td><%= link_to 'Edit', edit_shop_path(shop) %></td>
-        <td><%= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '詳細', shop %>　</td>
+        <td><%= link_to '編集', edit_shop_path(shop) %>　</td>
+        <td><%= link_to '削除', shop, method: :delete, data: { confirm: 'Are you sure?' } %>　</td>
       </tr>
     <% end %>
   </tbody>
@@ -42,4 +42,4 @@
 
 <br>
 
-<%= link_to 'New Shop', new_shop_path %>
+<%= link_to '店舗の新規登録', new_shop_path %>
